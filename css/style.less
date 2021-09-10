@@ -1,0 +1,44 @@
+// compress: true
+
+@import "vars";
+
+html {
+    font-size: 15px;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+  //font-size: 16px;
+    color: @basetext;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Blocks */
+
+@import "blocks/main.less";
+@import "blocks/task.less";
