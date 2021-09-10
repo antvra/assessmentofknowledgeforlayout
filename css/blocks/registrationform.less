@@ -1,0 +1,83 @@
+// main: ../style.less
+
+
+.registration__form {
+    h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
+
+.or {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &:after {
+        display: block;
+        width:100px;
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #afafaf;
+        top:50%;
+        margin-right: 30%;
+    }
+
+    &::before {
+        display: block;
+        width:100px;
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #afafaf;
+        top:50%;
+        margin-left: 30%;
+    }
+}
+
+.inputsinformsforregistration {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    input {
+        border: 1px solid #cccccc; //цвет рамки
+        border-radius: 1px; //закругление углов (общее)
+        outline: none;
+        height: 45px;
+        width: 200px;
+        color: @basetext;
+        font-size: 11px;
+        caret-color: transparent;
+        &:focus {
+            border-left: 2px solid #1a73a8;
+        }
+
+    }
+     input[type=email] {
+        margin-right: 20px;
+     }
+
+}
+
+.formsforregistration {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.input__box {
+    position: relative;
+}
+
+.form__label {
+    padding-top: 2px;
+    padding-left: 5px;
+    font-size: 10px;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    color: #9e9e9e;
+}
