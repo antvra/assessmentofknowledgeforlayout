@@ -3,13 +3,13 @@
 
 .registration__form {
     h1{
-        font-size: 20px;
-        margin-bottom: 10px;
+        margin-top: 8vh;
+        font-size: 1vw;
     }
 
     p {
-        font-size: 15px;
-        margin-top: 20px;
+        font-size: .8vw;
+        margin-top: .3vh;
     }
 }
 
@@ -19,63 +19,64 @@
     justify-content: center;
     &:after {
         display: block;
-        width:100px;
+        width:3vw;
         content: '';
         position: absolute;
-        border-bottom: 1px solid #afafaf;
+        border-bottom: .1vh solid #afafaf;
         top:50%;
-        margin-right: 30%;
+        margin-right: 25%;
     }
 
     &::before {
         display: block;
-        width:100px;
+        width:3vw;
         content: '';
         position: absolute;
-        border-bottom: 1px solid #afafaf;
+        border-bottom: .1vh solid #afafaf;
         top:50%;
-        margin-left: 30%;
+        margin-left: 25%;
     }
 }
 
 .inputsinformsforregistration {
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     display: flex;
     justify-content: center;
     input {
-        border: 1px solid #cccccc; //цвет рамки
-        border-radius: 1px; //закругление углов (общее)
+        border: .1vh solid #cccccc;
+        border-radius: .1vh;
         outline: none;
-        height: 45px;
-        width: 200px;
+        height: 3vh;
         color: @basetext;
-        font-size: 11px;
+        font-size: 14px;
         caret-color: transparent;
+        width: 9vw;
         &:focus {
             border-left: 2px solid #1a73a8;
         }
 
     }
-     input[type=email] {
-        margin-right: 20px;
-     }
 
 }
 
 .formsforregistration {
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 2.7vh;
+    margin-bottom: 2.7vh;
+    justify-content: center;
 }
 
 .input__box {
+    display: flex;
+    margin-right: 1vw;
+    margin-left: 1vw;
     position: relative;
 }
 
 .form__label {
-    padding-top: 2px;
-    padding-left: 5px;
-    font-size: 10px;
+    padding-top: 0.25vh;
+    padding-left: 0.3vw;
+    font-size: 0.7vh;
     display: inline-block;
     position: absolute;
     z-index: 1;

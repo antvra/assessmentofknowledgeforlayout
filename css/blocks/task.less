@@ -3,10 +3,11 @@
 .task {
     background-color: @task;
     display: flex;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 2vw rgba(0,0,0,0.2);
 }
 
 .task__left {
+    height: 70vh;
     width: 50%;
     background-image: url(../img/bg.jpg);
     background-size: 100% 100%;
@@ -14,9 +15,9 @@
     &::after{
         content: "";
         position: absolute;
-        left: 40px;
+        left: 2vw;
         right: 0;
-        top: 40px;
+        top: 2vw;
         bottom: 0;
         z-index: 1;
         background: url(../img/logo.svg) left top no-repeat;
@@ -25,6 +26,7 @@
 }
 
 .task__right {
+    height: 60vh;
     position: relative;
     width: 50%;
 }
@@ -32,6 +34,4 @@
 .allformsinright {
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
